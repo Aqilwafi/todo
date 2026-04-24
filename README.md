@@ -27,25 +27,25 @@ Aplikasi to-do list sederhana yang berjalan di **localhost** dengan penyimpanan 
 
 Pilih salah satu runtime yang tersedia di komputer kamu:
 
-### 🐍 Python
+### <img src="https://skillicons.dev/icons?i=python" /> Python
 ```bash
 python server.py
 ```
 > Memerlukan Python 3.x (sudah termasuk di macOS & kebanyakan Linux)
 
-### 🟩 Node.js
+### <img src="https://skillicons.dev/icons?i=nodejs" /> Node.js
 ```bash
 node server.js
 ```
 > Memerlukan [Node.js](https://nodejs.org) versi berapa pun. Tidak butuh `npm install`.
 
-### 🐘 PHP
+### <img src="https://skillicons.dev/icons?i=php" /> PHP
 ```bash
 php -S localhost:969 server.php
 ```
 > Memerlukan PHP 7.4+. Sudah tersedia di macOS, banyak Linux, dan hosting shared.
 
-### 🐹 Go
+### <img src="https://skillicons.dev/icons?i=go" /> Go
 ```bash
 # Langsung jalankan (tanpa build):
 go run server.go
@@ -56,7 +56,7 @@ go build -o server server.go
 ```
 > Memerlukan [Go](https://go.dev) 1.18+. Tanpa dependensi eksternal.
 
-### 🐳 Docker
+### <img src="https://skillicons.dev/icons?i=docker" /> Docker
 ```bash
 # Build & jalankan (background):
 docker compose up -d
@@ -159,7 +159,7 @@ curl -X DELETE http://localhost:969/api/todos/0
 
 ---
 
-## 🐳 Kustomisasi Docker
+## <img src="https://skillicons.dev/icons?i=docker" /> Kustomisasi Docker
 
 `Dockerfile` dan `docker-compose.yml` secara default menggunakan **Python**. Untuk mengganti ke runtime lain, buka file tersebut dan ikuti komentar di dalamnya — tinggal uncomment blok yang diinginkan.
 
