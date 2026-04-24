@@ -1,0 +1,61 @@
+# ── To-Do List — Docker Compose ──────────────────────────────────────────────
+# Jalankan : docker compose up -d
+# Hentikan : docker compose down
+# Lihat log : docker compose logs -f
+# Buka      : http://localhost:969
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── Pilih SALAH SATU service di bawah ──────────────────────────────────────
+  # Uncomment service yang diinginkan, comment sisanya.
+  # Default: Python
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # ── Python (default) ────────────────────────────────────────────────────────
+  todo:
+    build:
+      context: .
+      dockerfile: Dockerfile        # pastikan Dockerfile memakai blok Python
+    container_name: todo-app
+    ports:
+      - "969:969"
+    volumes:
+      - ./todo.txt:/app/todo.txt    # data tetap tersimpan di host
+    restart: unless-stopped
+
+  # ── Node.js ─────────────────────────────────────────────────────────────────
+  # todo:
+  #   image: node:22-alpine
+  #   container_name: todo-app
+  #   working_dir: /app
+  #   command: node server.js
+  #   ports:
+  #     - "969:969"
+  #   volumes:
+  #     - .:/app                    # mount seluruh folder (server.js + index.html + todo.txt)
+  #   restart: unless-stopped
+
+  # ── PHP ──────────────────────────────────────────────────────────────────────
+  # todo:
+  #   image: php:8.3-cli-alpine
+  #   container_name: todo-app
+  #   working_dir: /app
+  #   command: php -S 0.0.0.0:969 server.php
+  #   ports:
+  #     - "969:969"
+  #   volumes:
+  #     - .:/app
+  #   restart: unless-stopped
+
+  # ── Go (perlu build dulu: go build -o server server.go) ──────────────────
+  # todo:
+  #   image: alpine:3.19
+  #   container_name: todo-app
+  #   working_dir: /app
+  #   command: ./server
+  #   ports:
+  #     - "969:969"
+  #   volumes:
+  #     - .:/app
+  #   restart: unless-stopped
