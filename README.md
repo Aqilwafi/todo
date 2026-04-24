@@ -27,25 +27,25 @@ Aplikasi to-do list sederhana yang berjalan di **localhost** dengan penyimpanan 
 
 Pilih salah satu runtime yang tersedia di komputer kamu:
 
-### <img src="https://skillicons.dev/icons?i=python" /> Python
+### <img src="https://skillicons.dev/icons?i=python" width="30" height="30" valign="middle" /> Python
 ```bash
 python server.py
 ```
 > Memerlukan Python 3.x (sudah termasuk di macOS & kebanyakan Linux)
 
-### <img src="https://skillicons.dev/icons?i=nodejs" /> Node.js
+### <img src="https://skillicons.dev/icons?i=nodejs" width="30" height="30" valign="middle" /> Node.js
 ```bash
 node server.js
 ```
 > Memerlukan [Node.js](https://nodejs.org) versi berapa pun. Tidak butuh `npm install`.
 
-### <img src="https://skillicons.dev/icons?i=php" /> PHP
+### <img src="https://skillicons.dev/icons?i=php" width="30" height="30" valign="middle" /> PHP
 ```bash
 php -S localhost:969 server.php
 ```
 > Memerlukan PHP 7.4+. Sudah tersedia di macOS, banyak Linux, dan hosting shared.
 
-### <img src="https://skillicons.dev/icons?i=go" /> Go
+### <img src="https://skillicons.dev/icons?i=go" width="30" height="30" valign="middle" /> Go
 ```bash
 # Langsung jalankan (tanpa build):
 go run server.go
@@ -56,7 +56,7 @@ go build -o server server.go
 ```
 > Memerlukan [Go](https://go.dev) 1.18+. Tanpa dependensi eksternal.
 
-### <img src="https://skillicons.dev/icons?i=docker" /> Docker
+### <img src="https://skillicons.dev/icons?i=docker" width="30" height="30" valign="middle" /> Docker
 ```bash
 # Build & jalankan (background):
 docker compose up -d
@@ -159,7 +159,7 @@ curl -X DELETE http://localhost:969/api/todos/0
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=docker" /> Kustomisasi Docker
+## <img src="https://skillicons.dev/icons?i=docker" width="30" height="30" valign="middle" /> Kustomisasi Docker
 
 `Dockerfile` dan `docker-compose.yml` secara default menggunakan **Python**. Untuk mengganti ke runtime lain, buka file tersebut dan ikuti komentar di dalamnya — tinggal uncomment blok yang diinginkan.
 
